@@ -96,3 +96,50 @@ button:hover {
         font-size: 17px;
     }
 }
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    width: 90%;
+    max-width: 400px;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.modal-content h2 {
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+}
+
+.modal-content a {
+    display: block;
+    text-decoration: none;
+    background: #222;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.modal-content a:hover {
+    opacity: 0.8;
+}
+
+#closeBtn {
+    margin-top: 10px;
+    background: #ddd;
+    color: #222;
+}
