@@ -1,50 +1,302 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="az">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MNStudio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MNStudio — müasir, sürətli və məqsədyönlü veb saytlar."
+    />
+    <title>MNStudio — Veb dizayn və inkişaf</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Saytın yuxarı menyusu -->
+    <header class="site-header">
+      <a class="logo" href="#ana-sehife" aria-label="MNStudio ana səhifə"
+        >MN<span>Studio</span>
+      </a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Menyunu aç"
+        aria-expanded="false"
+        aria-controls="site-navigation"
+      >
+        <span> </span>
+        <span> </span>
+        <span> </span>
+      </button>
+      <nav id="site-navigation" class="navigation" aria-label="Əsas naviqasiya">
+        <a class="nav-link active" href="#ana-sehife">Ana səhifə</a>
+        <a class="nav-link" href="#xidmetler">Xidmətlər</a>
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+        <button class="nav-contact" id="navContactBtn" type="button">
+          Əlaqə
+        </button>
+      </nav>
+    </header>
+    <main>
+      <!-- İlk ekran -->
+      <section id="ana-sehife" class="hero section-shell">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span> </span> Rəqəmsal fikirləri formalaşdırıram
+          </p>
+          <h1>İdeyanız üçün <em>yadda qalan</em> rəqəmsal təcrübə.</h1>
+          <p class="hero-text">
+            MNStudio biznesinizə uyğun, sürətli və istifadəçidə etibar yaradan
+            veb saytlar hazırlayır.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#portfolio"
+              >Portfolioma bax <span aria-hidden="true">↗</span>
+            </a>
+            <button class="text-button contact-trigger" type="button">
+              Gəlin danışaq <span aria-hidden="true">→</span>
+            </button>
+          </div>
+          <div class="trust-row" aria-label="MNStudio üstünlükləri">
+            <div>
+              <strong>01</strong>
+              <span>Məqsədyönlü dizayn</span>
+            </div>
+            <div>
+              <strong>02</strong>
+              <span>Mobil uyğunluq</span>
+            </div>
+            <div>
+              <strong>03</strong>
+              <span>Təmiz kod</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-card art-card-top">
+            <span>Veb dizayn</span>
+            <b>Hər detal<br />bir səbəb üçündür.</b>
+          </div>
+          <div class="orb orb-one"></div>
+          <div class="orb orb-two"></div>
+          <div class="art-card art-card-bottom">
+            <span>MN</span>
+            <p>Fikir. Dizayn. Nəticə.</p>
+          </div>
+        </div>
+      </section>
 
-<body>
-  <div class="brand">
-    <h1>MNStudio</h1>
-    <p>By Muhammed</p>
-  </div>
+      <!-- Xidmət kartları -->
+      <section id="xidmetler" class="services section-shell">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span> </span> Nə təklif edirəm</p>
+            <h2>
+              Sadəcə gözəl deyil,<br />
+              <em>işlək</em> saytlar.
+            </h2>
+          </div>
+          <p>
+            Hər layihə aydın məqsədlə, istifadəçi rahatlığı və brendinizə uyğun
+            vizual dildə qurulur.
+          </p>
+        </div>
+        <div class="cards">
+          <article class="service-card featured-card">
+            <div class="card-number">01</div>
+            <div class="card-icon">⌘</div>
+            <h3>Web layihələrim</h3>
+            <p>
+              Hazırladığım saytları və üzərində işlədiyim rəqəmsal təcrübələri
+              kəşf edin.
+            </p>
+            <a class="card-link" href="#portfolio"
+              >Portfolioma bax <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+          <article class="service-card">
+            <div class="card-number">02</div>
+            <div class="card-icon">✦</div>
+            <h3>Dizayn</h3>
+            <p>
+              Brendinizin xarakterini göstərən müasir, aydın və diqqətçəkən
+              interfeyslər.
+            </p>
+            <button
+              class="card-link service-trigger"
+              type="button"
+              id="designBtn"
+            >
+              Nələri hazırlayıram <span aria-hidden="true">↗</span>
+            </button>
+          </article>
+          <article class="service-card contact-card">
+            <div class="card-number">03</div>
+            <div class="card-icon">↗</div>
+            <h3>Layihəniz var?</h3>
+            <p>
+              Fikrinizi danışın; birlikdə onu istifadəçiyə dəyər verən bir
+              məhsula çevirək.
+            </p>
+            <button class="card-link contact-trigger" type="button">
+              Mənimlə əlaqə <span aria-hidden="true">→</span>
+            </button>
+          </article>
+        </div>
+      </section>
 
-  <div class="cards">
-    <div class="card">
-      <h2>Web sayt</h2>
-      <p>Professional sayt hazırlanması.</p>
-      <button>Ətraflı bax</button>
+      <!-- Real layihələr hazır olduqca bu kartları yeniləyin -->
+      <section id="portfolio" class="portfolio-section">
+        <div class="section-shell">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow"><span> </span> Seçilmiş işlər</p>
+              <h2>
+                Portfolio<br />
+                <em>yoldadır.</em>
+              </h2>
+            </div>
+            <p>
+              Yeni layihələr tamamlandıqca bu bölmədə real nəticələri,
+              prosesləri və hekayələri paylaşacağam.
+            </p>
+          </div>
+          <div class="portfolio-grid">
+            <article class="portfolio-card portfolio-card-large">
+              <span>Layihə 01</span>
+              <div>
+                <p>Yaxında</p>
+                <h3>Növbəti veb təcrübə</h3>
+              </div>
+            </article>
+            <article class="portfolio-card portfolio-card-accent">
+              <span>Layihə 02</span>
+              <div>
+                <p>Yaxında</p>
+                <h3>Yeni hekayə</h3>
+              </div>
+            </article>
+            <article class="portfolio-card">
+              <span>Layihə 03</span>
+              <div>
+                <p>Yaxında</p>
+                <h3>İdeyadan ekrana</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Səhifənin son çağırış bölməsi -->
+      <section class="cta-section section-shell">
+        <p class="eyebrow"><span> </span> Birlikdə yaradaq</p>
+        <h2>
+          Saytınız ilk baxışdan<br />
+          <em>doğru hiss</em> yaratmalıdır.
+        </h2>
+        <button class="button button-primary contact-trigger" type="button">
+          Layihənizi danışaq <span aria-hidden="true">↗</span>
+        </button>
+      </section>
+    </main>
+
+    <!-- Alt hissə -->
+    <footer class="site-footer">
+      <a class="logo" href="#ana-sehife">MN<span>Studio</span> </a>
+      <p>
+        © <span id="currentYear"> </span> MNStudio. Fikir və dizaynla
+        hazırlanıb.
+      </p>
+      <a href="#ana-sehife" class="back-top"
+        >Yuxarı <span aria-hidden="true">↑</span>
+      </a>
+    </footer>
+
+    <!-- Əlaqə pəncərəsi -->
+    <div
+      id="contactModal"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="contactTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-content">
+        <button class="modal-close" type="button" aria-label="Pəncərəni bağla">
+          ×
+        </button>
+        <p class="eyebrow"><span> </span> Əlaqə</p>
+        <h2 id="contactTitle">
+          Gəlin bir şey<br />
+          <em>yaradaq.</em>
+        </h2>
+        <p>
+          Layihəniz barədə qısa məlumat verin. Sizə uyğun ən rahat platformadan
+          yazın.
+        </p>
+        <div class="modal-links">
+          <!-- Bu # işarələrini öz WhatsApp və Instagram keçidlərinizlə əvəz edin. -->
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            >WhatsApp <span>↗</span>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            >Instagram <span>↗</span>
+          </a>
+        </div>
+      </div>
     </div>
 
-    <div class="card">
-      <h2>Dizayn</h2>
-      <p>Müasir və gözəl dizayn.</p>
-      <button>Ətraflı bax</button>
+    <!-- Dizayn xidməti pəncərəsi -->
+    <div
+      id="designModal"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="designTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-content">
+        <button class="modal-close" type="button" aria-label="Pəncərəni bağla">
+          ×
+        </button>
+        <p class="eyebrow"><span> </span> Dizayn yanaşması</p>
+        <h2 id="designTitle">
+          Görünüşdən daha<br />
+          <em>artığı.</em>
+        </h2>
+        <ul class="service-list">
+          <li>
+            <span>01</span>
+            <div>
+              <b>Brend istiqaməti</b>
+              <p>Rəng, tipografiya və vizual üslubun seçilməsi.</p>
+            </div>
+          </li>
+          <li>
+            <span>02</span>
+            <div>
+              <b>İnterfeys dizaynı</b>
+              <p>İstifadəçini rahat yönləndirən ekranlar.</p>
+            </div>
+          </li>
+          <li>
+            <span>03</span>
+            <div>
+              <b>Mobil təcrübə</b>
+              <p>Hər ekranda eyni keyfiyyətli görünüş.</p>
+            </div>
+          </li>
+        </ul>
+        <button class="text-button contact-trigger" type="button">
+          Layihənizi danışaq <span aria-hidden="true">→</span>
+        </button>
+      </div>
     </div>
-
-    <div class="card">
-      <h2>Layihəniz var?</h2>
-      <p>Sayt hazırlatmaq istəyirsinizsə, mənimlə əlaqə saxlayın.</p>
-      <button id="contactBtn">Mənimlə əlaqə</button>
-    </div>
-  </div>
-
-  <div id="contactModal" class="modal">
-    <div class="modal-content">
-      <h2>Mənimlə əlaqə saxla</h2>
-      <p>İstədiyin platformanı seç:</p>
-
-      <a href="#" target="_blank">WhatsApp</a>
-      <a href="#" target="_blank">Instagram</a>
-
-      <button id="closeBtn">Bağla</button>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
